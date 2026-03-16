@@ -1,0 +1,10 @@
+# IDE ve Editör Ayarları
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# Sanal Ortam ve Şifreler
+venv/
+env/
+.env
