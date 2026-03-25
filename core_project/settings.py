@@ -7,8 +7,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / '.env')
 
 # GÜVENLİK NOTU: Gerçek projede bunu .env içine almalısın
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-ktu-e-ogrenme-2026')
-DEBUG = True
+SECRET_KEY = os.getenv('SECRET_KEY')
+DEBUG = os.getenv('DEBUG') == 'True'
 ALLOWED_HOSTS = []
 
 # 2. Uygulamalar
