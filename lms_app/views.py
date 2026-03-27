@@ -8,7 +8,6 @@ from django.contrib.auth.decorators import login_required
 # Kayıt Olma Görünümü
 def register_view(request):
     if request.method == 'POST':
-        # BURASI DEĞİŞTİ: Artık Custom formumuzu kullanıyoruz
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
